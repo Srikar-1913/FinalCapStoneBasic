@@ -29,8 +29,6 @@ public class Answer {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long answerId;
 	
-	@NotBlank(message = "Answer cannot be empty")
-	@Size(min = 5, message = "Answer should contain minium 5 characters")
 	private String content;
 	
 	private LocalDateTime createdAt;

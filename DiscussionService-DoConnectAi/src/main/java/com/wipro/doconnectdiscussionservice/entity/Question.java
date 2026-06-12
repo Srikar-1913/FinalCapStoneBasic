@@ -29,11 +29,8 @@ public class Question {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long questionId;
 	
-	@NotBlank(message = "Title is required")
 	private String title;
 	
-	@NotBlank(message = "Description is required")
-	@Size(min = 10, message = "Description must contain minium 10 characters")
 	private String description;
 	
 	private LocalDateTime createdAt;
