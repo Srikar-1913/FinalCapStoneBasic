@@ -28,10 +28,8 @@ public class Notification {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long notificationId;
 	
-	@NotBlank(message = "Message canot be empty")
 	private String message;
 	
-	@NotBlank(message = "Status is required")
 	private String status;
 	
 	private LocalDateTime createdAt;

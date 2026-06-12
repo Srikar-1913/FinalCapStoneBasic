@@ -28,7 +28,6 @@ public class ChatMessage {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long messageId;
 	
-	@NotBlank(message = "Message cannot be empty")
 	private String message;
 	
 	private LocalDateTime sentAt;
